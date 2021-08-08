@@ -6,3 +6,34 @@ criar classe model com os atributos
     informar o id da entidade(tabela)
         colocar annotation GenerateValue para geração do id
 ====================================================================
+criar a interface repository estendendo classe JpaRepository passar o tipo e o tipo do id
+ex: JpaRepository<ClasseModel, Integer>
+    colocar a annotation @Repository para o spring reconhecer como repository
+====================================================================
+criar classe service
+    colocar annotation Service para o spring reconhecer a classe com serviço
+    instânciar um objeto repository para criar os métodos de acesso ao banco de dados
+        colocar a annotation @Autowired para o spring instânciar o objeto em tempo de execução
+    criar um método construtor pegando como parâmetro um objeto repository
+    criar os métodos a escolha pode criar um CRUD por exemplo
+====================================================================
+criar a classe controller
+    colocar a annotation @RestController para o spring reconhecer
+    colocar a annotation @RequestMapping com o end-point da aplicação
+        ex: @RequestMapping("/minhaAPI")
+    instânciar um objeto service para usar os métodos
+        aplicar a annotation @Autowired
+        usar annotation @PostMapping para salvar
+        usar annotation @GetMapping para buscar
+        usar annotation @PutMapping para atualizar
+        usar annotation @DeleteMapping para deletar
+        usar annotation @ResponseStatus para gerar status HTTP (boas prática)
+            ex: @responseStatus(HttpStatus.CREATED)
+        usar annotation @ApiOperation para título do método(usado na documentação)
+            ex: @ApiOperation(value = "título do método")
+    criar os métodos que seram usados na API por exemplo CRUD
+        usar annotation @RequestBody para pegar o corpo da requisição
+        usar annotation @PathVariable para pegar valor no endereço da requisição
+            ex: localhos/minhaAPI/23 onde 23 seria o valor passado e pego pela annotation
+        usar annotation @RequestParam para pegar parâmetro na requisição
+
