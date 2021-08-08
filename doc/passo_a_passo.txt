@@ -1,0 +1,8 @@
+criar classe model com os atributos
+    criar gets e sets ou usar lambok
+    criar método construtores ou usar lambok
+    colocar annotation Entity para criar tabela no banco de dados
+        colocar o nome no campo value
+    informar o id da entidade(tabela)
+        colocar annotation GenerateValue para geração do id
+====================================================================
