@@ -50,7 +50,7 @@ public class PessoaController {
     }
 
     @DeleteMapping("/{idpessoa}")
-    @ApiOperation(value = "Deleta pessoa")
+    @ApiOperation(value = "Deletar pessoa")
     public void deletePessoaByID(@PathVariable("idpessoa")Integer id){
         pessoaService.deletePessoaByID(id);
     }
