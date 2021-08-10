@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "empresa")
+@Entity(name = "tb_empresa")
 public class Empresa {
     @Id
     @GeneratedValue

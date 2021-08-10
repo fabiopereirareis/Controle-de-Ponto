@@ -11,11 +11,11 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "nivel_de_acesso")
+@Entity(name = "tb_nivel_de_acesso")
 public class NivelDeAcesso {
     @Id
     @GeneratedValue
-    int codigoNivelDeAcesso;
+    long codigoNivelDeAcesso;
     String descricaoNivelDeAcesso;
 
 }
