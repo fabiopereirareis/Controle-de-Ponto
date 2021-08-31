@@ -33,7 +33,7 @@ Para ver a documentação com as instruçoes básicas de uso basta entrar neste 
 
 Endereço da aplicação na web:
 
-
+https://controle-de-ponto-dio.herokuapp.com/
 
 Ferramentas usadas no desenvolvimento do projeto::
 
