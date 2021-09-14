@@ -14,7 +14,7 @@ Passo a passo do desenvolvimento do projeto:
 - Implantação do sistema na nuvem através do Heroku
 
 Para executar o projeto no terminal, siga os passos abaixo:
-Navegue até a pasta gestaodepessoas/build/libs
+Navegue até a pasta /build/libs
 Abra um terminal e digite o seguite comando:
 
 ```
